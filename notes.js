@@ -66,6 +66,8 @@ const listNotes = () => {
 
   notes.forEach(note => {
     console.log(chalk.green(note.title + "\n" + note.body));
+
+    console.log("-----------")
   });
 };
 

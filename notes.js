@@ -5,8 +5,6 @@ const readNote = title => {
   const notes = loadNotes();
   const matchingNote = notes.find(note => note.title === title);
 
-  debugger 
-  
   if (matchingNote) {
     console.log(chalk.inverse(matchingNote.title) + "\n" + matchingNote.body);
   } else {
@@ -67,7 +65,7 @@ const listNotes = () => {
   notes.forEach(note => {
     console.log(chalk.green(note.title + "\n" + note.body));
 
-    console.log("-----------")
+    console.log("-----------");
   });
 };
 
